@@ -1,6 +1,10 @@
 version: 1
 backend:
   phases:
+    preBuild:
+      commands:
+        - nvm install 14
+        - nvm use 14
     build:
       commands:
         - amplifyPush --simple
