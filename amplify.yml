@@ -9,6 +9,7 @@ backend:
     build:
       commands:
         - amplifyPush --simple
+        - echo $FOO
 frontend:
   phases:
     build:
